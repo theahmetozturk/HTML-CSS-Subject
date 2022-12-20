@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Selectors</title>
+    <style>
+        #logo,
+        .lead {
+            color: aqua;
+            background-color: black;
+            /*Burada ayrı ayrı css "," ile yapılır. */
+        }
+
+        .info#p2 {
+            color: brown;
+            /*Burada aynı class isimleri olabileceği için id eklendi. İkili arama yapıldı.*/
+        }
+
+        ul li a {
+            color: red;
+            /*Burada üst kapsayıcıdan alt kapsayıcıya doğru bir seçim yapıldı.*/
+        }
+
+        * {
+            font-size: 25px;
+        }
+        /* "*" ile sayfanın tüm elemanlarını seçmiş oluruz.*/
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Header 1</h1>
+        <h1 id="logo">Logo</h1>
+        <ul>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+            <li>
+                <a href="#">Services</a>
+            </li>
+        </ul>
+    </header>
+    <h1>Header 2</h1>
+    <p class="lead info">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore, error.
+    </p>
+    <p class="info" id="p2">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis, sequi.
+    </p>
+    <p class="info">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, ad.
+    </p>
+    <title>Test Paragraph</title>
+    <a href="#">Home</a>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PsuedoClass</title>
+    <style>
+        a{
+            font-size: 24px;
+        }
+        a:link{
+            color:green
+        }
+        a:visited{
+            color: black;
+        }
+        a:hover{
+            color: red;
+        }
+        a:active{
+            color: blue;
+        }
+        /* Burada hangi statüde iken hangi renk olabileceği yapılmıştır.
+        Sabitken yeşil, tıklandığında siyah, imleç üstüne geldiğinde kırmızı,
+        ve imleç üzerinde basılı kaldığında mavi. */
+
+        input{
+            font-size: 1.5em;
+            padding: 10px;
+            border-radius: 8px;
+            border: 1px solid black;
+        }
+        input:focus{
+            outline: 0;
+            border: 2px solid red;
+        }
+        /* Burada input a focus olduğunda border değişikliği yapılır.*/
+    </style>
+</head>
+<body>
+    <a href="#">This is a link</a>
+    <input type="text" placeholder="Name">
+</body>
+</html>

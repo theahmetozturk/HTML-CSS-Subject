@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margin</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        div.box-1{
+            margin-top: 50px;          
+            margin-right: 50px;    /*BU şekil verilmese de sıralama böyle.*/      
+            margin-bottom: 50px;
+            margin-left: 50px;
+
+            margin: 50px 20px 50px 20px; /*Sıralamaya göre verildi.*/
+            margin: 50px 20px;  /*Top-bottom---right-left*/
+
+            margin-left: auto;
+            margin-right: auto;  /*Sağ ve sol aynı ayarlanır. Sayfa ortalanır.*/
+            margin: 0 auto; /*Bu şekil de kulanılır.Alt üst 0 sağ sol aynı olarak ortalanır.*/
+
+
+            background-color: gray;
+            width: 50%;
+
+            /* margin: auto; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box-1">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi, aspernatur?
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonts</title>
+    <style>
+        html{
+            font-size: 16px;
+        }
+        h1{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        p{
+            font-size: 24px;
+            line-height: 50px;
+             /* Burada "em" kullanabiliriz. Em font size ne ise onun değeri olur.
+             2em yaparsak font size değerinin 2 katı olur. 
+             Font size değerini html root olarak belirlediğimiz değer ne ise "rem" ile ayarlayabiliriz.*/
+        }
+        p{
+            font-size: 1.5rem;
+            line-height: 2rem;
+        }
+        span{
+            font-size: 1.5rem;
+            font-style: italic;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Başlık 1</h1>
+    <p>
+        Lorem ipsum dolor sit amet <span>consectetur</span> , adipisicing elit. Quos, quibusdam.
+    </p>
+</body>
+</html>
