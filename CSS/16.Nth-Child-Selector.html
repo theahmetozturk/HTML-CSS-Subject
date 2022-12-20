@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nth-Child-Selector</title>
+    <style>
+        /* p{
+            font-size: 1.5em;
+        }
+        p:first-child{
+            background-color: blue;
+        }                           Burada contentleri seçebiliyoruz.
+        p:last-child{
+            background-color: aqua;     
+        }
+        p:nth-child(3){
+            color: rgb(29, 175, 41);
+        } */
+
+        /* p:nth-child(even){
+            color: aqua;
+        }
+        p:nth-child(odd){
+            color: red;
+        } */
+
+        p:nth-child(2n){
+            color: rgb(230, 18, 18);
+        }
+        p:nth-child(2n+1){
+            color: blue;
+        }
+        /* Tek ve çiftler seçildi.*/
+
+    </style>
+</head>
+<body>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, porro.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, porro.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, porro.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, porro.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, porro.
+    </p>
+</body>
+</html>
